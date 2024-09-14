@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "cal",
-    "slug": "cal",
+    "name": "Exactify",
+    "slug": "exactify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +18,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.likweitan.exactify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3f9f9d2f-145f-414d-829a-8e92cc3d5ed1"
+      }
+    },
+    "owner": "likweitan",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true
+          }
+        }
+      ]
+    ]
   }
 }
